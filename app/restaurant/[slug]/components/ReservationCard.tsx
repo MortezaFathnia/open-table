@@ -3,7 +3,6 @@
 export default function ReservationCard() {
   return (
     <div className='fixed w-[15%] bg-white rounded p-3 shadow'>
-      <h1>dsdsads</h1>
       <div className='text-center border-b pb-2 font-bold'>
         <h4 className='mr-7 text-lg'>Make a Reservation</h4>
       </div>

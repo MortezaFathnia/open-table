@@ -1,7 +1,5 @@
-import Navbar from '@/app/components/Navbar';
 import { PrismaClient } from '@prisma/client';
 import Description from './components/Description';
-import Header from './components/Header';
 import Images from './components/Images';
 import Rating from './components/Rating';
 import ReservationCard from './components/ReservationCard';
