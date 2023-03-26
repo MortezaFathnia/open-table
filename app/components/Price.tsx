@@ -17,10 +17,10 @@ export default function Price({ price }: { price: PRICE }) {
     }else{
       return (
         <>
-          <p className='flex mr-3'>{renderPrice()}</p>
+          <span>$$$$</span>
         </>
       );
     }
   };
-  return <div>Price</div>;
+  return <p className='text-reg font-light flex mr-3'>{renderPrice()}</p>;
 }
