@@ -63,7 +63,7 @@ model User {
   last_name  String
   city       String
   password   String
-  email      String
+  email      String   @unique
   phone      String
   reviews    Review[]
   created_at DateTime @default(now())
@@ -71,15 +71,15 @@ model User {
 }
 
 model Review {
-  id         Int    @id @default(autoincrement())
-  first_name String
-  last_name  String
-  text       String
-  rating     Float
+  id            Int        @id @default(autoincrement())
+  first_name    String
+  last_name     String
+  text          String
+  rating        Float
   restaurant_id Int
-  restaurant Restaurant @relation(fields: [restaurant_id],references: [id])
-  user_id Int
-  user User @relation(fields: [user_id],references: [id])
+  restaurant    Restaurant @relation(fields: [restaurant_id], references: [id])
+  user_id       Int
+  user          User       @relation(fields: [user_id], references: [id])
 }
 
 enum PRICE {
